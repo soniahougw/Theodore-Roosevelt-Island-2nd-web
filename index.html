@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theodore Roosevelt Island — Washington, DC</title>
+    <meta name="description" content="A visitor guide to Theodore Roosevelt Island, an 88-acre wooded memorial park in the Potomac River, Washington, DC. Hours, trails, directions and history.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="#top">Roosevelt Island</a>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#trails">Trails</a></li>
+                <li><a href="#visit">Plan a visit</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#voices">Voices</a></li>
+                <li><a href="#sources">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+            <!-- Slideshow: the first photo loads immediately; the others are loaded by main.js after the page loads -->
+            <img class="hero-photo is-active"
+                 src="images/hero-2-1920.jpg"
+                 srcset="images/hero-2-1200.jpg 1200w, images/hero-2-1920.jpg 1920w"
+                 sizes="100vw" width="1920" height="995" fetchpriority="high"
+                 alt="The memorial plaza in full sun, with stone steps and benches leading up to the statue of Roosevelt before a wall of green trees.">
+            <img class="hero-photo" aria-hidden="true"
+                 data-src="images/hero-1-1920.jpg"
+                 data-srcset="images/hero-1-1200.jpg 1200w, images/hero-1-1920.jpg 1920w"
+                 sizes="100vw" width="1920" height="1440" decoding="async"
+                 alt="Sunlit memorial plaza on Theodore Roosevelt Island, with the statue of Roosevelt standing at the far end among tall trees.">
+            <img class="hero-photo" aria-hidden="true"
+                 data-src="images/hero-3-1920.jpg"
+                 data-srcset="images/hero-3-1200.jpg 1200w, images/hero-3-1920.jpg 1920w"
+                 sizes="100vw" width="1920" height="1440" decoding="async"
+                 alt="A gravel woodland trail in the shade of tall trees, leading toward the memorial plaza.">
+
+            <div class="hero-copy">
+                <p class="eyebrow">National Memorial &middot; Potomac River &middot; Washington, DC</p>
+                <h1>Theodore Roosevelt Island</h1>
+                <p class="lede">An 88-acre island of forest and marsh, left wild on purpose, a short walk from the city's busiest bridges.</p>
+                <p class="status" id="open-status" aria-live="polite">Open daily 6&nbsp;a.m.&ndash;10&nbsp;p.m.</p>
+            </div>
+            <div class="hero-controls" role="group" aria-label="Hero photo slideshow" hidden>
+                <button type="button" class="hero-pause" aria-pressed="false" aria-label="Pause slideshow">
+                    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path class="i-pause" d="M4 3h3v10H4zM9 3h3v10H9z"/><path class="i-play" d="M5 3l8 5-8 5z"/></svg>
+                </button>
+                <button type="button" class="hero-dot" aria-label="Show photo 1" aria-current="true"></button>
+                <button type="button" class="hero-dot" aria-label="Show photo 2"></button>
+                <button type="button" class="hero-dot" aria-label="Show photo 3"></button>
+            </div>
+            <p class="hero-credit">Photo: NPS</p>
+        </section>
+
+        <!-- QUICK FACTS -->
+        <section class="facts" aria-label="Quick facts">
+            <dl>
+                <div><dt>Hours</dt><dd>6&nbsp;a.m. &ndash; 10&nbsp;p.m.<span>every day</span></dd></div>
+                <div><dt>Entry</dt><dd>Free<span>no pass required</span></dd></div>
+                <div><dt>Trails</dt><dd>2&#8541; miles<span>three trails</span></dd></div>
+                <div><dt>Parking</dt><dd>~90 spots<span>northbound GW Parkway only</span></dd></div>
+            </dl>
+        </section>
+
+        <!-- PHOTOS -->
+        <section id="photos" class="section">
+            <div class="section-head">
+                <p class="eyebrow">See it</p>
+                <h2>Forest, boardwalk and bronze</h2>
+                <p>Official photographs from the National Park Service.</p>
+            </div>
+            <div class="gallery">
+                <figure>
+                    <a class="lb-link" href="https://www.nps.gov/common/uploads/structured_data/3C85E097-1DD8-B71B-0BA63E687BBA913E.jpg"><img src="https://www.nps.gov/common/uploads/structured_data/3C85E097-1DD8-B71B-0BA63E687BBA913E.jpg" alt="A bronze statue of Theodore Roosevelt standing and pointing." loading="lazy" decoding="async"></a>
+                    <figcaption>The Roosevelt statue <span>&middot; NPS</span></figcaption>
+                </figure>
+                <figure>
+                    <a class="lb-link" href="https://www.nps.gov/common/uploads/structured_data/3C862DDE-1DD8-B71B-0B5C48506D1C2EFA.jpg"><img src="https://www.nps.gov/common/uploads/structured_data/3C862DDE-1DD8-B71B-0B5C48506D1C2EFA.jpg" alt="woodland trail in the shadow of tall trees" loading="lazy" decoding="async"></a>
+                    <figcaption>A woodland trail <span>&middot; NPS Photo</span></figcaption>
+                </figure>
+                <figure>
+                    <a class="lb-link" href="https://www.nps.gov/common/uploads/structured_data/3C8631C9-1DD8-B71B-0BA4D335CC1C974F.jpg"><img src="https://www.nps.gov/common/uploads/structured_data/3C8631C9-1DD8-B71B-0BA4D335CC1C974F.jpg" alt="three people walking on wooden boardwalk under trees" loading="lazy" decoding="async"></a>
+                    <figcaption>Boardwalk trail <span>&middot; NPS Photo</span></figcaption>
+                </figure>
+                <figure>
+                    <a class="lb-link" href="https://www.nps.gov/common/uploads/structured_data/3C862F4F-1DD8-B71B-0BD2DC83F445FAAD.jpg"><img src="https://www.nps.gov/common/uploads/structured_data/3C862F4F-1DD8-B71B-0BD2DC83F445FAAD.jpg" alt="Three people with Park Ranger at Theodore Roosevelt Memorial." loading="lazy" decoding="async"></a>
+                    <figcaption>Ranger program at the memorial <span>&middot; NPS Photo</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- HISTORY -->
+        <section id="history" class="section">
+            <div class="section-head">
+                <p class="eyebrow">A landscape with layers</p>
+                <h2>From trading town to living memorial</h2>
+                <p>The island has carried many names &mdash; My Lord's Island, Barbadoes, Analostan, Mason's Island &mdash; before Congress named it for the 26th president and the conservationist who set aside 230 million acres of public land.</p>
+            </div>
+
+            <ol class="timeline">
+                <li>
+                    <span class="when">Before 1600s</span>
+                    <h3>Nacotchtank homeland</h3>
+                    <p>Algonquian-speaking people lived along this stretch of the river. The name <em>Anacostia</em> comes from <em>anaquashatanik</em>, &ldquo;a town of traders.&rdquo;</p>
+                </li>
+                <li>
+                    <span class="when">1700s &ndash; 1800s</span>
+                    <h3>Analostan &amp; Mason's Island</h3>
+                    <p>A private estate with the Mason mansion and a ferry landing. The Upland Trail now loops around the mansion's former site.</p>
+                </li>
+                <li>
+                    <span class="when">1860s</span>
+                    <h3>Civil War</h3>
+                    <p>Camp Greene and a Freedman's Camp were established on the island.</p>
+                </li>
+                <li>
+                    <span class="when">1930s</span>
+                    <h3>Re-wilded as a memorial</h3>
+                    <p>Landscape architect Frederick Law Olmsted Jr. and the Civilian Conservation Corps transformed overgrown farmland into the woodland and swamp you walk through today.</p>
+                </li>
+                <li>
+                    <span class="when">Oct. 27, 1967</span>
+                    <h3>Memorial plaza dedicated</h3>
+                    <p>On Roosevelt's birthday, the plaza opened with Paul Manship's 17-foot bronze statue, flanked by fountains and granite tablets of Roosevelt's own words.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- TRAILS -->
+        <section id="trails" class="section section-tint">
+            <div class="section-head">
+                <p class="eyebrow">On foot only</p>
+                <h2>Three trails, 2&#8541; miles</h2>
+                <p>Bicycles aren't allowed on the island &mdash; the trails weren't built for them. Racks are near the footbridge.</p>
+            </div>
+
+            <div class="trail-grid">
+                <article class="trail">
+                    <div class="trail-top"><h3>Swamp Trail</h3><span class="miles">1&frac12; mi</span></div>
+                    <div class="bar" role="img" aria-label="1.5 miles, the longest trail"><i style="--len:100%"></i></div>
+                    <p>A loop through swampy woods and cattail marsh. Part pea gravel, part boardwalk.</p>
+                </article>
+                <article class="trail">
+                    <div class="trail-top"><h3>Upland Trail</h3><span class="miles">&frac34; mi</span></div>
+                    <div class="bar" role="img" aria-label="0.75 miles"><i style="--len:50%"></i></div>
+                    <p>Runs the length of the island and loops around the former site of the Mason mansion.</p>
+                </article>
+                <article class="trail">
+                    <div class="trail-top"><h3>Woods Trail</h3><span class="miles">&#8531; mi</span></div>
+                    <div class="bar" role="img" aria-label="One third of a mile"><i style="--len:22%"></i></div>
+                    <p>Pea-gravel path through the island's center to the memorial plaza, statue and fountains.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- TRAIL EXPLORER: pick a trail to highlight it on the schematic map -->
+        <section id="explorer" class="section">
+            <div class="section-head">
+                <p class="eyebrow">Explore the map</p>
+                <h2>Three short trails on one small island</h2>
+                <p>Pick a trail to see it on the map. Together they add up to 2&#8541; miles, all of it on foot.</p>
+            </div>
+
+            <div class="xp">
+                <figure class="xp-map" id="xp-map">
+                    <svg viewBox="0 0 400 560" role="img" aria-label="Schematic map of the island showing the Swamp, Woods and Upland trails, the memorial plaza and the footbridge from the Virginia shore">
+                        <defs>
+                            <path id="xp-island" d="M210 20 C260 40 290 90 285 150 C282 200 300 240 292 300 C285 360 300 410 270 470 C250 515 205 540 165 525 C120 510 100 465 110 410 C118 360 95 320 105 260 C112 210 100 170 120 120 C138 70 170 30 210 20Z"/>
+                            <clipPath id="xp-island-clip"><use href="#xp-island"/></clipPath>
+                        </defs>
+                        <rect class="xp-sea" width="400" height="560"/>
+                        <rect class="xp-shore" x="0" y="0" width="30" height="560"/>
+                        <text class="xp-label" transform="translate(19 380) rotate(-90)">Virginia shore and parking</text>
+                        <use href="#xp-island" class="xp-land"/>
+                        <g clip-path="url(#xp-island-clip)" data-trees></g>
+                        <use href="#xp-island" class="xp-coast"/>
+
+                        <line class="xp-bridge" x1="30" y1="290" x2="106" y2="290"/>
+                        <text class="xp-label" x="34" y="276">Footbridge</text>
+
+                        <path class="route route-swamp" data-trail="swamp" d="M130 290 C138 240 150 190 158 140 C168 92 198 58 238 70 C275 90 276 150 271 200 C266 250 276 300 268 350 C262 400 268 440 250 480"/>
+                        <path class="route route-woods" data-trail="woods" d="M205 300 C200 250 195 200 205 150 C212 112 222 88 232 72"/>
+                        <path class="route route-upland" data-trail="upland" d="M130 290 C124 330 128 370 140 410 C150 450 175 490 205 502 C230 496 245 472 255 440"/>
+
+                        <path class="xp-connector" d="M130 290 L205 300"/>
+                        <circle class="xp-plaza" cx="205" cy="300" r="15"/>
+                        <text class="xp-label" x="228" y="326">Memorial plaza</text>
+                    </svg>
+                    <figcaption class="xp-note">Schematic, not to scale.</figcaption>
+                </figure>
+
+                <div>
+                    <div class="xp-list" role="group" aria-label="Choose a trail" hidden>
+                        <button class="xp-btn" type="button" data-trail="swamp" aria-pressed="true">
+                            <svg viewBox="0 0 56 14" aria-hidden="true" focusable="false"><line x1="3" y1="7" x2="53" y2="7" stroke="#6ac6ca" stroke-width="5" stroke-linecap="round"/></svg>
+                            <span><span class="xp-name">Swamp Trail</span><span class="xp-tag">1&frac12; mi &middot; marsh and boardwalk</span></span>
+                        </button>
+                        <button class="xp-btn" type="button" data-trail="woods" aria-pressed="false">
+                            <svg viewBox="0 0 56 14" aria-hidden="true" focusable="false"><line x1="0" y1="7" x2="56" y2="7" stroke="#9bd08a" stroke-width="5" stroke-dasharray="11 7"/></svg>
+                            <span><span class="xp-name">Woods Trail</span><span class="xp-tag">&#8531; mi &middot; to the memorial plaza</span></span>
+                        </button>
+                        <button class="xp-btn" type="button" data-trail="upland" aria-pressed="false">
+                            <svg viewBox="0 0 56 14" aria-hidden="true" focusable="false"><line x1="4" y1="7" x2="52" y2="7" stroke="#e0b27a" stroke-width="6" stroke-dasharray=".1 11" stroke-linecap="round"/></svg>
+                            <span><span class="xp-name">Upland Trail</span><span class="xp-tag">&frac34; mi &middot; the length of the island</span></span>
+                        </button>
+                    </div>
+
+                    <!-- Without JavaScript all three panels simply show; with it, only the chosen trail's panel does -->
+                    <div class="xp-detail" aria-live="polite">
+                        <div class="xp-panel" data-trail="swamp">
+                            <h3>Swamp Trail &middot; 1&frac12; miles</h3>
+                            <p>Passes through swampy woods and cattail marsh. The surface is part pea gravel and part boardwalk.</p>
+                            <p class="xp-look"><b>Look for:</b> the cattail marsh and the stretches of boardwalk.</p>
+                        </div>
+                        <div class="xp-panel" data-trail="woods">
+                            <h3>Woods Trail &middot; &#8531; mile</h3>
+                            <p>A pea-gravel path through the center of the island that leads to the memorial plaza, with its statue and fountains.</p>
+                            <p class="xp-look"><b>Look for:</b> the 17-foot bronze statue of Roosevelt and the fountains around the plaza.</p>
+                        </div>
+                        <div class="xp-panel" data-trail="upland">
+                            <h3>Upland Trail &middot; &frac34; mile</h3>
+                            <p>Runs the length of the island through the woods and loops around the former site of the Mason mansion.</p>
+                            <p class="xp-look"><b>Look for:</b> the loop where the Mason estate once stood.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISIT -->
+        <section id="visit" class="section">
+            <div class="section-head">
+                <p class="eyebrow">Plan a visit</p>
+                <h2>Getting there</h2>
+                <p>The island is in Washington, DC, but you reach it from the Virginia side of the river.</p>
+            </div>
+
+            <div class="visit-grid">
+                <article class="card">
+                    <h3>By car</h3>
+                    <p>The parking lot is reachable <strong>only from the northbound</strong> George Washington Memorial Parkway. After the Roosevelt Bridge, watch for the exit sign and turn right into the lot (about 90 spaces). Park Police regularly ticket cars parked on the grass.</p>
+                </article>
+                <article class="card">
+                    <h3>By Metro &amp; on foot</h3>
+                    <p>It's a 10&ndash;15 minute walk from Rosslyn station. Head for Key Bridge, then take the connecting trail from the bridge's downstream side to the parking area and footbridge.</p>
+                </article>
+                <article class="card">
+                    <h3>By bike</h3>
+                    <p>The Mount Vernon Trail ends here at its northern terminus. Lock up at the racks by the footbridge &mdash; bikes can't go onto the island.</p>
+                </article>
+                <article class="card">
+                    <h3>Good to know</h3>
+                    <ul>
+                        <li>Pets welcome on a leash of six feet or less; pick up after them.</li>
+                        <li>Benches and water fountains at the memorial plaza.</li>
+                        <li>Ranger programs, birding and a Junior Ranger activity are offered.</li>
+                        <li>Questions? Call <a href="tel:+17032892500">703-289-2500</a>.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- MAP -->
+        <section id="map" class="section section-tint">
+            <div class="section-head">
+                <p class="eyebrow">Find it</p>
+                <h2>Between Georgetown and Rosslyn</h2>
+            </div>
+            <div class="map-controls" hidden>
+                <div class="map-toggle" role="group" aria-label="Map layer">
+                    <button type="button" data-layer="mapnik" aria-pressed="true">Standard</button>
+                    <button type="button" data-layer="transportmap" aria-pressed="false">Transport Map</button>
+                </div>
+            </div>
+            <div class="map-frame">
+                <iframe
+                    title="Map of Theodore Roosevelt Island"
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-77.0730%2C38.8890%2C-77.0510%2C38.9020&amp;layer=mapnik&amp;marker=38.89541%2C-77.06220"></iframe>
+            </div>
+            <p class="map-link"><a id="map-large" href="https://www.openstreetmap.org/?mlat=38.89541&amp;mlon=-77.06220#map=16/38.89541/-77.06220">View larger map</a></p>
+        </section>
+
+        <!-- PEOPLE'S VOICE -->
+        <!-- Reviews load live from the Google Places API (New) once data-api-key is filled in. Setup notes are in main.js. -->
+        <section id="voices" class="section" data-place-id="ChIJlZFw1ly3t4kR0qDUDl3eWG4" data-api-key="">
+            <div class="section-head">
+                <p class="eyebrow">What visitors say</p>
+                <h2>People's Voice</h2>
+                <p>Real reviews from people who have walked the island, straight from Google Maps.</p>
+            </div>
+            <div class="voice-summary" id="voice-summary" hidden></div>
+            <div class="voice-grid" id="voice-grid" hidden></div>
+            <p class="voice-actions">
+                <a class="voice-link" href="https://www.google.com/maps/place/Roosevelt+lsland+Park/@38.8965459,-77.0709232,16z/data=!4m10!1m2!2m1!1stheodore+roosevelt+park+dc!3m6!1s0x89b7b75cd6709195:0x6e58de5d0ed4a0d2!8m2!3d38.8965459!4d-77.0650259!15sChp0aGVvZG9yZSByb29zZXZlbHQgcGFyayBkY1ocIhp0aGVvZG9yZSByb29zZXZlbHQgcGFyayBkY5IBBHBhcmuaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUktOV1JITkZCM0VBReABAPoBBAgAED4!16s%2Fg%2F11pf2m2bjh?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Read all reviews on Google <span aria-hidden="true">&nearr;</span></a>
+            </p>
+            <p class="voice-attrib">Ratings and reviews from Google Maps, shown as written by each reviewer.</p>
+        </section>
+
+        <!-- SOURCES -->
+        <section id="sources" class="section">
+            <div class="section-head">
+                <p class="eyebrow">Where this information comes from</p>
+                <h2>Open data, checked</h2>
+            </div>
+            <div class="sources">
+                <p>Visitor details &mdash; hours, fees, trails, directions and history &mdash; come from the
+                    <a href="https://www.nps.gov/this/index.htm">National Park Service page for Theodore Roosevelt Island</a>
+                    (park code <code>this</code>) and were checked against the NPS API through the
+                    <a href="https://github.com/amysatterlee/nps_mcp">nps MCP server</a>&rsquo;s <code>park-details</code> tool. Photos are NPS photographs.</p>
+                <p>We also searched the District's
+                    <a href="https://opendata.dc.gov/datasets/DCGIS::parks-and-recreation-areas/about">Parks and Recreation Areas</a>
+                    dataset. It returned no record for the island: that layer covers properties run by DC's Department of Parks and Recreation, and Roosevelt Island is federal land managed by the National Park Service.</p>
+                <p class="fine">Always check the <a href="https://www.nps.gov/this/planyourvisit/conditions.htm">NPS alerts &amp; conditions</a> page before you go &mdash; the island can flood.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Unofficial visitor guide &middot; Not affiliated with the National Park Service &middot; <span id="year"></span></p>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+        <figure>
+            <img id="lightbox-img" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <p class="lb-count" id="lightbox-count" aria-live="polite"></p>
+        <button class="lb-btn lb-close" type="button" aria-label="Close photo viewer">&times;</button>
+        <button class="lb-btn lb-nav lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <button class="lb-btn lb-nav lb-next" type="button" aria-label="Next photo">&#8250;</button>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
