@@ -146,6 +146,7 @@ p { margin: 0 0 1rem; }
     transition: background .2s ease, transform .2s ease;
 }
 .hero-dot[aria-current="true"]::before { background: #fff; transform: scale(1.25); }
+.hero-credit[hidden] { display: none; }
 .hero-credit {
     position: absolute;
     right: clamp(1rem, 2vw, 1.5rem);

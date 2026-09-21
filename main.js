@@ -39,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const FADE_MS = 1200;
         const TOUCH_HOLD_MS = 8000;
         const dots = [...heroControls.querySelectorAll(".hero-dot")];
+        const heroCredit = document.querySelector(".hero-credit");
+        const showCredit = (slide) => {
+            if (!heroCredit) return;
+            heroCredit.textContent = slide.dataset.credit || "";
+            heroCredit.hidden = !slide.dataset.credit; // no credit known for this photo: show none rather than a wrong one
+        };
         const pauseButton = heroControls.querySelector(".hero-pause");
 
         let current = 0;
@@ -65,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => outgoing.classList.remove("is-prev"), FADE_MS + 100);
 
             dots.forEach((dot, i) => dot.setAttribute("aria-current", String(i === index)));
+            showCredit(incoming);
             current = index;
         };
 

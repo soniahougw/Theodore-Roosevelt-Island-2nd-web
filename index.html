@@ -32,21 +32,29 @@
         <!-- HERO -->
         <section class="hero">
             <!-- Slideshow: the first photo loads immediately; the others are loaded by main.js after the page loads -->
-            <img class="hero-photo is-active"
+            <img class="hero-photo is-active" data-credit="Photo: NPS"
                  src="images/hero-2-1920.jpg"
                  srcset="images/hero-2-1200.jpg 1200w, images/hero-2-1920.jpg 1920w"
                  sizes="100vw" width="1920" height="995" fetchpriority="high"
                  alt="The memorial plaza in full sun, with stone steps and benches leading up to the statue of Roosevelt before a wall of green trees.">
-            <img class="hero-photo" aria-hidden="true"
+            <img class="hero-photo" aria-hidden="true" data-credit="Photo: NPS"
                  data-src="images/hero-1-1920.jpg"
                  data-srcset="images/hero-1-1200.jpg 1200w, images/hero-1-1920.jpg 1920w"
                  sizes="100vw" width="1920" height="1440" decoding="async"
                  alt="Sunlit memorial plaza on Theodore Roosevelt Island, with the statue of Roosevelt standing at the far end among tall trees.">
-            <img class="hero-photo" aria-hidden="true"
+            <img class="hero-photo" aria-hidden="true" data-credit="Photo: NPS"
                  data-src="images/hero-3-1920.jpg"
                  data-srcset="images/hero-3-1200.jpg 1200w, images/hero-3-1920.jpg 1920w"
                  sizes="100vw" width="1920" height="1440" decoding="async"
                  alt="A gravel woodland trail in the shade of tall trees, leading toward the memorial plaza.">
+            <img class="hero-photo" aria-hidden="true"
+                 data-src="images/hero-4.jpg"
+                 sizes="100vw" width="1000" height="666" decoding="async"
+                 alt="A wooden boardwalk winding through a green marsh, with rope railings, a bench and tall cattails.">
+            <img class="hero-photo" aria-hidden="true"
+                 data-src="images/hero-5.jpg"
+                 sizes="100vw" width="800" height="450" decoding="async"
+                 alt="A straight wooden boardwalk between rope-and-post railings, surrounded by green marsh plants and trees.">
 
             <div class="hero-copy">
                 <p class="eyebrow">National Memorial &middot; Potomac River &middot; Washington, DC</p>
@@ -61,6 +69,8 @@
                 <button type="button" class="hero-dot" aria-label="Show photo 1" aria-current="true"></button>
                 <button type="button" class="hero-dot" aria-label="Show photo 2"></button>
                 <button type="button" class="hero-dot" aria-label="Show photo 3"></button>
+                <button type="button" class="hero-dot" aria-label="Show photo 4"></button>
+                <button type="button" class="hero-dot" aria-label="Show photo 5"></button>
             </div>
             <p class="hero-credit">Photo: NPS</p>
         </section>
